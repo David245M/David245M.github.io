@@ -1,0 +1,90 @@
+/*TABS*/
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 700px;
+}
+
+
+/*content*/
+
+#content {
+    margin: 20px;
+    font-size: 1.1em;
+    font-family: monospace;
+}
+
+.info {
+    padding-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    
+    position: relative;
+}
+
+#cursor {
+    height: 102px;
+    width: 5px;
+    background-color: #2277c1;
+    content: ' ';
+    
+    position: absolute;
+    left: 24px;
+}
+
+/******guitarNeck********/
+
+.guitarNeck {
+   
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    padding:10px 0 30px;
+    border-top: 3px solid #000000;
+}
+
+
+.container {
+    margin:  0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.guitarNeck .container {
+     display: flex;
+    flex-direction: row;
+}
+
+.guitarNeck  .img {
+    width: 65%;
+}
+
+.root {
+    padding: 20px;
+    width: 20%;
+}
+
+.guitarNeck select {
+    padding: 5px;
+    margin: 5px;
+}
+
+.guitarNeck select:first-of-type {
+    padding-right: 12px;
+}
+
+.fretBox {
+    opacity:0;
+}
+
+.fretBox:hover {
+    opacity: 50%;
+}
